@@ -1,0 +1,19 @@
+{
+  "name": "time-delta-t",
+  "version": "1.0.0",
+  "description": "Time Delta T (JavaScript port of TDT)",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "keywords": ["time", "delta", "tdt", "ticks", "datetime"],
+  "author": "JD Plumbing",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^30.1.3"
+  },
+  "dependencies": {
+    "luxon": "^3.4.4"
+  }
+}

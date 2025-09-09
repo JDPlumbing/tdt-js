@@ -1,6 +1,6 @@
 {
   "name": "time-delta-t",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Time Delta T (JavaScript port of TDT)",
   "main": "src/index.js",
   "type": "module",

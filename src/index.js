@@ -93,8 +93,10 @@ export function prettyBreakdown(start, end = DateTime.now(), maxUnits = 3) {
   return parts.slice(0, maxUnits).join(", ") || "0 seconds";
 }
 
-// --- Example if run directly ---
-if (import.meta.url === `file://${process.argv[1]}`) {
+// --- Example if run directly with Node (skip in browser) ---
+if (typeof process !== "undefined" &&
+    process.argv &&
+    import.meta.url === `file://${process.argv[1]}`) {
   const start = DateTime.fromISO("1997-06-15");
   const end = DateTime.now();
 
